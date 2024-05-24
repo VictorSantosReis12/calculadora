@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-sizing para garantir que padding e border sejam inclusos na largura e altura totais */
+}
+
+html, body{
+    height: 100%; /* Certificando de que o html e o body ocupem 100% da altura*/
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculadora{
+    height: 60vh;
+    width: 41vh;
+    background-color: #333;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px black; /*Adiciona sombra em torno da calculadora */
+}
+
+#painel{
+    height: 17%;
+    padding: 1vw;
+    background-color: #000;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#resultado{
+    color: #fff;
+    font-size: 5vh;
+}
+
+#teclado{
+    padding: 1vh;
+    display: grid;
+    grid-template-columns: 17.8% 17.8% 17.8% 17.8%;
+    grid-template-rows: 25% 25% 25% 25% 25%;
+    row-gap: 2.7vh;
+    column-gap: 2.7vh;
+    grid-template-areas: 
+        "C divi multi menos"
+        "sete oito nove mais"
+        "quatro cinco seis igual"
+        "um dois tres igual"
+        "zerado zerado ponto igual";
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 2rem;
+    font-size: 3vh;
+}
+
+.botao_C{
+    grid-area: C;
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.botao_divi{
+    grid-area: divi;
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.botao_multi{
+    grid-area: multi;
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.botao_menos{
+    grid-area: menos;
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.botao_mais{
+    grid-area: mais;
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.botao_igual{
+    grid-area: igual;
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.botao_7{
+    grid-area: sete;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_8{
+    grid-area: oito;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_9{
+    grid-area: nove;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_4{
+    grid-area: quatro;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_5{
+    grid-area: cinco;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_6{
+    grid-area: seis;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_1{
+    grid-area: um;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_2{
+    grid-area: dois;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_3{
+    grid-area: tres;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_0{
+    grid-area: zerado;
+    background-color: #505050;
+    color: #fff;
+}
+
+.botao_ponto{
+    grid-area: ponto;
+    background-color: #505050;
+    color: #fff;
+}
+
+#botao_numerico:hover{
+    background-color: #707070;
+    cursor: pointer;
+}
+
+#botao_funcao:hover{
+    background-color: #cecece;
+    cursor: pointer;
+}
+
+#botao_operador:hover{
+    background-color: #fdab39;
+    cursor: pointer;
+}
